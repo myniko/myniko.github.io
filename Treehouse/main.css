@@ -26,7 +26,7 @@ p {
     text-align: center;
 }
 
-h2 {
+h3 {
     font-size: 3.3rem;
     text-align: center;
     padding: 5rem 0 2rem 0;
@@ -35,9 +35,19 @@ h2 {
 /* Header */
 
 header {
-    width: 100%;
+    max-width: 960px;
     height: 10rem;
     background: #fff;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin-left: 1rem;
+    padding-top: 3.2rem;
+    max-width: 15rem;
+    float: left;
+    z-index: 99;
+    position: absolute;
 }
 
 nav {
@@ -45,12 +55,7 @@ nav {
     margin: 0 auto;
     line-height: 5rem;
     position: relative;
-}
-
-nav > img {
-    float: left;
-    padding-top: 3.5rem;
-    padding-left: 2rem;
+    padding-top: 6rem;
 }
 
 nav > ul {
@@ -96,6 +101,8 @@ nav > ul > li > a {
     border-top: 1px solid rgba(230, 230, 230, 0.5);
 }
 
+/* Section 'Welcome' */
+
 section.welcome {
     background-image: url(img/background.png);
     background-repeat: no-repeat;
@@ -104,9 +111,7 @@ section.welcome {
     height: 53rem;
 }
 
-/* Section 'Welcome' */
-
-.welcome h1 {
+.welcome h3 {
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -140,7 +145,7 @@ section.welcome {
     padding: 2.5rem;
 }
 
-.services-box h5 {
+.services-box h4 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.8rem;
     margin-top: 4rem;
@@ -180,7 +185,7 @@ section.welcome {
     height: 61.6rem;
 }
 
-.relax-small h2 {
+.relax-small h3 {
     color: #ffffff;
     font-size: 3rem;
     text-align: left;
@@ -273,7 +278,7 @@ section.welcome {
    padding-bottom: 5rem;
 }
 
-.projects h3 {
+.projects h4 {
     color: #222222;
     font-size: 1.8rem;
     margin-bottom: 2.5rem;
@@ -282,7 +287,7 @@ section.welcome {
     margin-left: 1rem;
 }
 
-.projects h4 {
+.projects h5 {
     color: #222222;
     font-size: 1.8rem;
     margin-top: 3.5rem;
@@ -361,7 +366,7 @@ section.welcome {
     margin: 2rem 0 2rem 0;
 }
 
-.culture h5 {
+.culture h4 {
     margin-top: 2rem;
 }
 
@@ -401,7 +406,7 @@ blockquote {
     padding-bottom: 5rem;
 }
 
-.h2-talk {
+.h3-talk {
     color: #ffffff;
 }
 
@@ -412,6 +417,18 @@ blockquote {
     flex-wrap: wrap;
     max-width: 90rem;
     margin: auto;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
 }
 
 .partners a {
@@ -439,7 +456,15 @@ blockquote {
     vertical-align: top;
 }
 
-.social-h5 {
+address {
+    font-size: 15px;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.social-h4 {
     font-size: 1.8rem;
     color: #ffffff;
 }
@@ -490,6 +515,10 @@ blockquote {
     font-size: 1.4rem;
 }
 
+dt {
+    display: inline;
+}
+
 .fontello {
     text-align: center;
     margin: 2rem;
@@ -534,10 +563,14 @@ blockquote {
         height: 11.5rem;
     }
     
+    header h1 {
+        margin-top: 1rem;
+    }
+    
     nav > ul {
         visibility: visible;
         float: right;
-        margin-top: -4rem;
+        margin-top: -2.6rem;
     }
     
     nav > ul > li {
@@ -557,7 +590,7 @@ blockquote {
         padding-top: 4.5rem;
     }
     
-    .welcome h1 {
+    .welcome h3 {
         font-size: 6rem;
         padding-top: 10rem;
         width: 500px;
@@ -653,7 +686,7 @@ blockquote {
         background-position: center right;
     }
     
-    .projects h3,
+    .projects h4,
     .p-project,
     .view-details {
        text-align: left;
